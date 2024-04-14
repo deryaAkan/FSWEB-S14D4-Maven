@@ -4,7 +4,7 @@ public class Coke extends ProductForSale{
 
     private int volume;
     @Override
-    void showDetails() {
+    public void showDetails() {
         System.out.println(super.toString() + this);
     }
 

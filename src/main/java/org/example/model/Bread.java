@@ -7,6 +7,11 @@ public class Bread extends ProductForSale{
         super(type, price, description);
     }
 
+    public Bread(String type, double price, String description, String flour) {
+        super(type, price, description);
+        this.flour = flour;
+    }
+
     @Override
     public String toString() {
         return "Bread{" +
@@ -15,7 +20,7 @@ public class Bread extends ProductForSale{
     }
 
     @Override
-    void showDetails() {
+    public void showDetails() {
         System.out.println(super.toString() + this);
     }
 }
